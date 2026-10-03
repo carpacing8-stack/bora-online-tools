@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: bora-online-tools
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: bash render-build.sh
+    startCommand: npm start
