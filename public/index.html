@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5b4bff">
+<title>BORA — Free Online Document Converter | PDF, JPG, PNG & OCR Tools</title>
+<meta name="description" content="BORA is an online document converter with PDF, JPG, PNG, Word, image conversion and OCR tools. Convert files quickly with a clean and easy-to-use workflow.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="BORA">
+<meta name="theme-color" content="#6d5dfc">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="BORA — Free Online Document Converter">
+<meta property="og:description" content="Convert PDF, JPG, PNG, Word and other documents online with BORA.">
+<meta property="og:site_name" content="BORA">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kantumruy+Pro:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "BORA",
+  "description": "Online document converter with PDF, JPG, PNG, Word and OCR tools.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web"
+}
+</script>
+</head>
+<body>
+
+<div id="boraIntro" class="bora-intro" aria-hidden="true">
+  <div class="bora-intro-word" aria-label="BORA TOOL">
+    <span class="intro-bora">BORA</span><span class="intro-dot">.</span>
+    <span class="intro-tool">TOOL</span>
+  </div>
+  <div class="bora-intro-sub">
+    <span>Convert</span><span>&nbsp;</span><span>all</span><span>&nbsp;</span><span>Documents</span>
+  </div>
+  <div class="bora-intro-line"></div>
+</div>
+<div class="ambient" aria-hidden="true"><i></i><i></i><i></i><i></i><div class="grid-glow"></div></div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <button class="brand" data-page="tools" aria-label="BORA Home">
+      <span class="brand-copy"><strong>BORA</strong><small>DOCUMENT TOOLS</small></span>
+    </button>
+
+    <nav class="nav" aria-label="Main navigation">
+      <button class="nav-btn active" data-page="tools"><span>Tools</span></button>
+      <button class="nav-btn" data-page="drivers"><span>Drivers</span></button>
+      <button class="nav-btn" data-page="apps"><span>Apps</span></button>
+      <button class="nav-btn" data-page="windows"><span>Windows</span></button>
+      <button class="nav-btn" data-page="admin"><span>Owner</span></button>
+    </nav>
+
+    <div class="top-actions">
+      <button id="langBtn" class="icon-btn" title="Language">EN</button>
+      <button id="themeBtn" class="icon-btn theme-btn" title="Toggle theme">☾</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+<section id="tools" class="page active">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> BORA DOCUMENT WORKSPACE</div>
+      <h1>Every file.<br><span>One clean workflow.</span></h1>
+      <p>Convert, edit and organize documents, PDFs, images and OCR from one fast workspace.</p>
+      <div class="hero-pills">
+        <span><b>01</b> Fast workflow</span>
+        <span><b>02</b> Local processing</span>
+        <span><b>03</b> Batch ready</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-panel">
+        <div class="hero-panel-top"><span>WORKSPACE</span><i></i><i></i><i></i></div>
+        <div class="hero-file main-file"><b>PDF</b><span>Document.pdf</span><em>READY</em></div>
+        <div class="hero-file side-file file-a"><b>DOCX</b><span>Word</span></div>
+        <div class="hero-file side-file file-b"><b>JPG</b><span>Image</span></div>
+        <div class="hero-arrow">→</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="workspace-note">
+    <div><span class="live-dot"></span><strong>Ready to convert</strong><small>Drop files into any tool to begin</small></div>
+  </div>
+
+  <div class="tool-toolbar">
+    <div class="search-wrap"><span>⌕</span><input id="toolSearch" placeholder="Search tools…"></div>
+    <div class="tool-tabs" id="toolTabs">
+      <button class="tool-tab active" data-filter="all">All</button>
+      <button class="tool-tab" data-filter="convert">Convert</button>
+      <button class="tool-tab" data-filter="pdf">PDF</button>
+      <button class="tool-tab" data-filter="image">Image</button>
+      <button class="tool-tab" data-filter="ocr">OCR</button>
+    </div>
+  </div>
+
+  <div class="workspace-note">
+    <div><span class="live-dot"></span><strong>Ready to convert</strong><small>Drop files into any tool to begin</small></div>
+    
+  </div>
+
+  <div id="toolSections"></div>
+</section>
+<section id="drivers" class="page">
+  <div class="section-head"><div><div class="eyebrow">DRIVER CENTER</div><h2>Drivers</h2><p>Find printer and scanner drivers.</p></div></div>
+  <div class="tabs"><button class="tab active" data-cat="all">All</button><button class="tab" data-cat="printer">Printer Driver</button><button class="tab" data-cat="scanner">Scanner Driver</button></div>
+  <input id="ds" class="search" placeholder="Search brand, model or driver">
+  <div id="dl" class="list"></div>
+</section>
+
+<section id="apps" class="page">
+  <div class="section-head"><div><div class="eyebrow">APP DOWNLOAD CENTER</div><h2>Android Apps</h2><p>Download APK files directly to your phone.</p></div></div>
+  <div id="al" class="list"></div>
+</section>
+
+<section id="windows" class="page">
+  <div class="section-head"><div><div class="eyebrow">WINDOWS DOWNLOADS</div><h2>Windows Files</h2><p>Utilities and files you are authorized to distribute.</p></div></div>
+  <input id="ws" class="search" placeholder="Search Windows files">
+  <div id="wl" class="list"></div>
+</section>
+
+<section id="admin" class="page">
+  <div class="section-head"><div><div class="eyebrow">PRIVATE OWNER STUDIO</div><h2>Owner / Creator Mode</h2><p>Only the owner can change tools, icons, branding and the animated background.</p></div></div>
+  <div class="login-card"><input id="pw" type="password" placeholder="Owner password"><button id="unlock" class="primary">Unlock Owner Mode</button><span id="stat"></span></div>
+  <div id="panel" class="hidden">
+    <div class="admin-actions"><button id="backupBtn" class="secondary">Download Full Backup</button><button id="refreshAdmin" class="ghost">Refresh Downloads</button><button id="loadSiteAdmin" class="ghost">Refresh Website Settings</button></div>
+    <div class="owner-tabs">
+      <button class="owner-tab active" data-owner-tab="site">Website & Background</button>
+      <button class="owner-tab" data-owner-tab="tools">Tool Manager</button>
+      <button class="owner-tab" data-owner-tab="downloads">Downloads</button>
+    </div>
+    <div id="owner-site" class="owner-pane active">
+      <div class="admin-grid owner-grid">
+        <div class="admin-form">
+          <h3>Branding</h3>
+          <input id="siteName" placeholder="Website name">
+          <input id="siteSubtitle" placeholder="Subtitle">
+          <input id="siteTagline" placeholder="Hero tagline">
+          <textarea id="siteDesc" placeholder="Hero description"></textarea>
+          <div class="two"><input id="logoText" placeholder="Logo text"><input id="logoImage" placeholder="Logo image URL"></div>
+          <input id="iconUpload" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml">
+          <button id="saveSite" class="primary">Save Website Settings</button>
+        </div>
+        <div class="admin-form">
+          <h3>Animated Background</h3>
+          <label>Style<select id="bgType"><option value="aurora">Aurora / Floating Glow</option><option value="particles">Particles</option><option value="grid">Moving Grid</option><option value="image">Custom Image</option></select></label>
+          <div class="two"><label>Speed<input id="bgSpeed" type="number" min="4" max="120"></label><label>Opacity<input id="bgOpacity" type="number" min="0" max="1" step=".01"></label></div>
+          <input id="bgImage" placeholder="Custom background image URL"><input id="bgUpload" type="file" accept="image/png,image/jpeg,image/webp">
+          <p class="muted">You can upload an image above, then paste its URL here, or use the built-in animated styles.</p>
+          <button class="ghost" onclick="document.getElementById('saveSite').click()">Apply Background</button>
+        </div>
+        <div class="admin-form">
+          <h3>Public / Owner Rules</h3>
+          <div class="rule-box"><b>Public mode</b><span>Use tools only. No write access.</span></div>
+          <div class="rule-box"><b>Owner mode</b><span>Edit site settings, tools, icons and downloads.</span></div>
+          <div class="rule-box"><b>Live updates</b><span>Public pages refresh configuration automatically.</span></div>
+        </div>
+      </div>
+    </div>
+    <div id="owner-tools" class="owner-pane">
+      <div class="panel-title-row"><div><h3>Tool Manager</h3><p class="muted">Add, edit, hide, reorder and customize every tool.</p></div><button id="newTool" class="primary">＋ Add New Tool</button></div>
+      <div id="toolAdminList" class="tool-admin-list"></div>
+    </div>
+    <div id="owner-downloads" class="owner-pane">
+      <div class="admin-grid">
+        <form id="df" class="admin-form" enctype="multipart/form-data"><input type="hidden" name="type" value="drivers"><h3>Add Driver</h3><select name="category"><option value="printer">Printer Driver</option><option value="scanner">Scanner Driver</option></select><div class="two"><input name="brand" placeholder="Brand" required><input name="model" placeholder="Model" required></div><input name="title" placeholder="Driver title"><div class="two"><input name="windows" placeholder="Windows version"><input name="version" placeholder="Driver version"></div><textarea name="description" placeholder="Description"></textarea><input name="file" type="file" required><button class="primary" type="submit">Upload Driver</button></form>
+        <form id="af" class="admin-form" enctype="multipart/form-data"><input type="hidden" name="type" value="apps"><h3>Add Android APK</h3><input name="name" placeholder="App name" required><div class="two"><input name="version" placeholder="Version"><input name="versionCode" placeholder="Version code"></div><textarea name="whatsNew" placeholder="What's new"></textarea><textarea name="description" placeholder="Description"></textarea><input name="file" type="file" accept=".apk" required><button class="primary" type="submit">Upload APK</button></form>
+        <form id="wf" class="admin-form" enctype="multipart/form-data"><input type="hidden" name="type" value="windows"><h3>Add Windows File</h3><input name="name" placeholder="File name" required><div class="two"><input name="version" placeholder="Version"><input name="windows" placeholder="Windows version"></div><textarea name="description" placeholder="Description"></textarea><input name="file" type="file" required><button class="primary" type="submit">Upload File</button></form>
+      </div>
+      <div class="panel"><div class="panel-title"><h3>Uploaded Items</h3></div><div id="items"></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="modal" class="modal hidden"><div class="modal-backdrop" id="modalBackdrop"></div><div class="modal-box"><div class="modal-head"><div><div class="eyebrow">BORA TOOL</div><h2 id="modalTitle">Tool</h2></div><button id="close" class="close-btn">×</button></div><div id="modalBody"></div></div></div>
+<div id="downloadFab" class="download-fab" title="Download Center" aria-label="Download Center"><span class="download-fab-icon">↓</span><span class="download-count" id="downloadCount">0</span></div>
+<div id="downloadCenter" class="download-center hidden" aria-hidden="true">
+  <div class="download-center-head"><div><div class="eyebrow">BORA FILES</div><h3>Download Center</h3></div><button id="closeDownloadCenter" class="close-btn" aria-label="Close">×</button></div>
+  <div id="downloadCenterList" class="download-center-list"></div>
+  <div class="download-center-foot"><button id="clearDownloads" class="ghost">Clear list</button></div>
+</div>
+<div id="toast" class="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdn.sheetjs.com/xlsx-0.18.5/package/dist/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+document.addEventListener("click",e=>{
+  const b=e.target.closest(".owner-tab"); if(!b)return;
+  document.querySelectorAll(".owner-tab").forEach(x=>x.classList.toggle("active",x===b));
+  document.querySelectorAll(".owner-pane").forEach(x=>x.classList.remove("active"));
+  document.getElementById("owner-"+b.dataset.ownerTab)?.classList.add("active");
+});
+</script>
+<script src="/app.js"></script>
+
+<script>
+(function(){
+  function boraApplyBackground(){
+    const s=window.site?.background||{};
+    const levels={low:34,medium:22,high:14,max:9};
+    document.documentElement.style.setProperty("--bora-bg-clarity",String(Math.max(.70,Math.min(1,Number(s.clarity||96)/100))));
+    document.documentElement.style.setProperty("--bora-bg-speed",(levels[s.motion]||22)+"s");
+    const a=document.querySelector(".ambient"); if(!a)return;
+    a.classList.toggle("bg-grid-off",s.grid==="off");
+    a.classList.toggle("bg-particles-off",s.particles==="off");
+    a.classList.toggle("bg-scan-off",s.scan==="off");
+  }
+  window.boraApplyBackground=boraApplyBackground;
+  const old=window.applySite;
+  if(typeof old==="function")window.applySite=function(){const r=old.apply(this,arguments);boraApplyBackground();return r};
+  document.addEventListener("DOMContentLoaded",boraApplyBackground);
+})();
+</script>
+</body>
+</html>
