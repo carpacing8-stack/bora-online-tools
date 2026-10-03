@@ -1,6 +1,8 @@
 node_modules/
 uploads/
-data/
+data/*
+!data/
+!data/site.json
 backup-online/
 converted/
 .env
